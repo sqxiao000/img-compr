@@ -1,5 +1,3 @@
-% 4A
-
 function [ P_padded ] = pad15( P )
     %pad - produces a new matrix like P, except that the number of rows and
     %columns are both multiples of 15.
