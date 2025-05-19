@@ -1,5 +1,3 @@
-% 4B
-
 function [ newB, num_zeros ] = process_block( B, tol )
 % Applies compression algorithm to a 15x15 block of integers
 % and produces a new image matrix and a count of zeros in
