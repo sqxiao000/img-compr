@@ -1,5 +1,3 @@
-% 4C
-
 function [ compressedP, compression_rate ] = compress_image( P, tol )
 % Compresses an image setting small Fourier coefficients to 0
 
