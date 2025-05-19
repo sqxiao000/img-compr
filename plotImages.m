@@ -1,5 +1,3 @@
-% tol values for the image of snoopy 'snoopy.jpg'.
-
 function [ ] = plotImages( image_file)
 % plotImages plots the image in image_file with various levels of compression
 
@@ -18,19 +16,19 @@ function [ ] = plotImages( image_file)
     title("Original Image");
     axis off;
     subplot(2,2,2);
-    tol50 = 3500; % You have to adjust this value
+    tol50 = 3500; % adjust this value
     [cP50, comp50] = compress_image(P, tol50);
     image(cP50);
     title(strcat("Compression Rate: ",num2str(comp50)));
     axis off;
     subplot(2,2,3);
-    tol80 = 29900; % You have to adjust this value
+    tol80 = 29900; % adjust this value
     [cP80, comp80] = compress_image(P, tol80);
     image(cP80);
     title(strcat("Compression Rate: ",num2str(comp80)));
     axis off;
     subplot(2,2,4);
-    tol95 = 34300; % You have to adjust this value
+    tol95 = 34300; % adjust this value
     [cP95, comp95] = compress_image(P, tol95);
     image(cP95);
     title(strcat("Compression Rate: ",num2str(comp95)));
